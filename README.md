@@ -8,7 +8,7 @@ A graphical weather forecasting application built using Tkinter, OpenWeather API
 ## Installation 🖥️
 ### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Weather-Forecast-System.git
+git clone https://github.com/Armaan-Sharma12/Weather-Forecast-System.git
 ```
 ### Run the application:
 ```bash
