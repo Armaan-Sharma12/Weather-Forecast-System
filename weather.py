@@ -16,7 +16,7 @@ root.resizable(False,False)
 
 def getWeather():
     city=textfield.get()
-    geolocator = OpenCageGeocode('a4e608cd98b042f09a0bc7e7ec2130a5')
+    geolocator = OpenCageGeocode('Your API')
     location = geolocator.geocode(city)
     obj=TimezoneFinder()
     result=obj.timezone_at(lng=location.longitude,lat=location.latitude)
@@ -28,7 +28,7 @@ def getWeather():
     clock.config(text=current_time)
 
     ##weather
-    api = f"https://api.openweathermap.org/data/2.5/onecall?lat={location.latitude}&lon={location.longitude}&units=metric&exclude=hourly,minutely&appid=9ab45ca70d965f1cb8887437926ff112" 
+    api = f"https://api.openweathermap.org/data/2.5/onecall?lat={location.latitude}&lon={location.longitude}&units=metric&exclude=hourly,minutely&appid= Your api" 
     json_data=requests.get(api).json()
 
     ##current
